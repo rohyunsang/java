@@ -1,11 +1,20 @@
 import java.io.File;
 import java.io.FileWriter;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
 
 public class FileSave {
 
 	public static void main(String[] args) {
 
-		String text = "저장할 값입니다.";
+		ArrayListLotto arrayListLotto = new ArrayListLotto();
+		ArrayList<Integer> arr = arrayListLotto.arrayListLotto();
+		
+		System.out.println(arr);
+		
+		String text = " test " ;
 
 		String fileNm = "D:\\example\\date_file.txt";
 
@@ -26,7 +35,5 @@ public class FileSave {
 			e.printStackTrace();
 
 		}
-
 	}
-
 }
