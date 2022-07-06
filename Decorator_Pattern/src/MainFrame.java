@@ -4,7 +4,7 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 
 public class MainFrame extends JFrame implements ActionListener {
-	JButton[] buttons = new Jbutton[9];
+	// JButton[] buttons = new Jbutton[9];
 	Hamburger hamburger = new EmptyHamburger();
 
 	
