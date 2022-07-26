@@ -1,3 +1,6 @@
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+
 import javax.swing.*;
 
 public abstract class Hamburger extends JPanel {
@@ -12,5 +15,9 @@ public abstract class Hamburger extends JPanel {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+	
+	public void paintComponent(Graphics g) {
+		
 	}
 }

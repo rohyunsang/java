@@ -1,3 +1,5 @@
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 
 public class BeefPatty extends HamburgerIngredient{
 
@@ -15,5 +17,11 @@ public class BeefPatty extends HamburgerIngredient{
 		return null;
 	}
 	
+	public void paintComponent(Graphics g) {
+		hamburger.paintComponents(g);
+		Graphics2D g2 = (Graphics2D) g;
+		if(image != null) g2.drawImage(image, 125,150,330,300,this);
+		
+	}
 
 }

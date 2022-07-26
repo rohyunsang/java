@@ -59,7 +59,7 @@ public class ActionListenerEx extends JFrame{
 			@Override //java에서 getSource()를 호출하면 이벤트가 발생한 객체에 대한 참조를 리턴 
 			public void actionPerformed(ActionEvent ae) { //action event ae
 				// TODO Auto-generated method stub
-				if(btnPlus.equals(ae.getSource())) {
+				if(btnPlus.equals(ae.getSource())) {  //button이 눌렸을때 
 					
 					String strNum = lblNum.getText();
 					int num = Integer.parseInt(strNum);
